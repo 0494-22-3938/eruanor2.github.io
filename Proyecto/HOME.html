@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Página Principal - Banca Electrónica</title>  
+    <script src="https://cdn.tailwindcss.com"></script>  
+</head>  
+<body class="bg-gray-100 flex flex-col min-h-screen">  
+    <header class="bg-blue-600 p-4">  
+        <div class="container mx-auto flex justify-between items-center flex-wrap">  
+            <div class="flex items-center">  
+                <img src="imagenes/logo.png" width="50" alt="Logo Banco UMG"/>  
+                <h1 class="text-white text-2xl font-bold">&nbsp;Banco UMG</h1>  
+            </div>  
+            <div class="mt-2 w-full flex justify-end">  
+                <a href="LOGON.php" class="text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded">Cerrar Sesión</a>  
+            </div>  
+        </div>  
+    </header> 
+    <main class="container mx-auto mt-8 flex-grow flex flex-col items-center px-4">  
+        <section class="bg-white p-6 rounded-lg shadow-md w-full max-w-3xl mb-8">  
+            <h2 class="text-2xl font-semibold mb-4 text-center">Bienvenido a la Banca Electrónica</h2>  
+            <p class="mb-4 text-center">Accede a tus cuentas, realiza transferencias y gestiona tus finanzas de manera fácil y segura.</p>  
+            <div class="flex flex-col space-y-4">  
+                <a href="TRX.php" class="block text-center bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Realizar Transferencia</a>  
+                <a href="ESTADO.php" class="block text-center bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Ver Estado de Cuenta</a>  
+                <a href="AGREGAR_CUENTA.php" class="block text-center bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Agregar Cuenta de Tercero</a>  
+            </div>  
+        </section>  
+        <section class="bg-white p-6 rounded-lg shadow-md w-full max-w-3xl">  
+            <h3 class="text-xl font-semibold mb-4 text-center">Características Destacadas</h3>  
+            <ul class="list-disc list-inside space-y-2">  
+                <li>Acceso 24/7 a tus cuentas desde cualquier lugar.</li>  
+                <li>Transferencias rápidas y seguras entre cuentas.</li>  
+                <li>Consulta de saldo y movimientos en tiempo real.</li>  
+                <li>Soporte al cliente disponible para ayudarte.</li>  
+            </ul>  
+        </section>  
+    </main>  
+    <footer class="bg-blue-600 p-4 mt-8">  
+        <div class="container mx-auto text-center text-white">  
+            <p>&copy; 2024 Banco UMG. Todos los derechos reservados.</p>  
+        </div>  
+    </footer>  
+</body>  
+</html>

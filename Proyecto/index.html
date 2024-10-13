@@ -1,0 +1,67 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Página Principal del Banco</title>  
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script>  
+        function toggleMenu() {  
+            const menu = document.getElementById('dropdown-menu');  
+            menu.classList.toggle('hidden');  
+        }  
+    </script>  
+</head>  
+<body class="bg-gray-100 flex flex-col min-h-screen">  
+    <header class="bg-blue-600 p-4">  
+        <div class="container mx-auto flex justify-between items-center flex-wrap">  
+            <div class="flex items-center">  
+                <img src="imagenes/logo.png" width="50"/>  
+                <h1 class="text-white text-2xl font-bold">&nbsp;Banco UMG</h1>  
+            </div>  
+            <div class="relative">  
+                <button onclick="toggleMenu()" class="text-white md:hidden focus:outline-none">  
+                    Menú  
+                </button>  
+                <nav class="hidden md:block">  
+                    <ul class="flex space-x-4">  
+                        <li><a href="LOGON_ADMIN.php" class="text-white hover:underline">Inicio de sesión Administrador</a></li>  
+                        <li><a href="LOGON.php" class="text-white hover:underline">Inicio de sesión Usuario</a></li>  
+                        <li><a href="LOGONC.php" class="text-white hover:underline">Inicio de sesión Cajero</a></li>  
+                        <li><a href="LOGOND.php" class="text-white hover:underline">Registro de Nuevo Usuario</a></li>  
+                    </ul>  
+                </nav>  
+                <ul id="dropdown-menu" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden md:hidden">  
+                    <li><a href="LOGON_ADMIN.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Inicio de sesión Administrador</a></li>  
+                    <li><a href="LOGON.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Inicio de sesión Usuario</a></li>  
+                    <li><a href="LOGONC.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Inicio de sesión Cajero</a></li>  
+                    <li><a href="LOGOND.php" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Registro de Nuevo Usuario</a></li>  
+                </ul>  
+            </div>  
+        </div>  
+    </header>  
+    <main class="container mx-auto mt-8 flex flex-col md:flex-row flex-grow">  
+        <div class="md:w-1/2 p-4">  
+            <img src="imagenes/portada_inicio.png"/>  
+        </div>  
+        <div class="md:w-1/2 p-4">  
+            <h2 class="text-xl font-semibold">Información del Proyecto</h2>  
+            <p><strong>Carne:</strong> 12345678</p>  
+            <p><strong>Nombre:</strong> Juan Pérez</p>  
+            <p><strong>Curso:</strong> Desarrollo WEB</p>  
+            <p><strong>Ingeniero:</strong> Ing. Carlos López</p>  
+            <p><strong>Actividad:</strong> Sistema de Banca en Línea</p>  
+        </div>  
+        <div class="md:w-1/2 p-4">  
+            <h2 class="text-xl font-semibold">Tarjeta de Crédito y Débito</h2>  
+            <img src="imagenes/tarjeta.png" alt="Tarjeta de Crédito y Débito" class="mb-4"/>  
+            <p><strong>Descripción:</strong> Las tarjetas de crédito y débito de Banco UMG ofrecen seguridad, conveniencia y la posibilidad de realizar transacciones en cualquier lugar del mundo, con acceso a promociones exclusivas y un excelente servicio al cliente.</p>  
+        </div>  
+    </main>  
+    <footer class="bg-blue-600 p-4 mt-8">  
+        <div class="container mx-auto text-center text-white">  
+            <p>&copy; 2024 Banco UMG. Todos los derechos reservados.</p>  
+        </div>  
+    </footer>  
+</body>  
+</html>

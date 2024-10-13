@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Home de Caja - Banca Electrónica</title>  
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script>  
+        function toggleMenu() {  
+            const menu = document.getElementById('dropdown-menu');  
+            menu.classList.toggle('hidden');  
+        }  
+    </script>  
+</head>  
+<body class="bg-gray-100 flex flex-col min-h-screen">  
+    <header class="bg-blue-600 p-4">  
+        <div class="container mx-auto flex justify-between items-center flex-wrap">  
+            <div class="flex items-center">  
+                <img src="imagenes/logo.png" width="50" alt="Logo Banco UMG"/>  
+                <h1 class="text-white text-2xl font-bold">&nbsp;Banco UMG</h1>  
+            </div>  
+            <div class="mt-2 w-full flex justify-end">  
+                <a href="LOGONC.php" class="text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded">Cerrar Sesión</a>  
+            </div>  
+        </div>  
+    </header>  
+    <main class="container mx-auto mt-8 flex-grow flex flex-col items-center px-4">  
+        <section class="bg-white p-6 rounded-lg shadow-md w-full max-w-3xl mb-8">  
+            <h2 class="text-2xl font-semibold mb-4 text-center">Bienvenido a Caja</h2>  
+            <p class="mb-4 text-center">Selecciona una opción para gestionar cuentas monetarias.</p>  
+            <div class="flex flex-col space-y-4">  
+                <a href="CUENTA.php" class="block text-center bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Crear Cuenta Monetaria</a>  
+                <a href="DEPOSITO.php" class="block text-center bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Realizar Depósito Monetario</a>  
+                <a href="RETIRO.php" class="block text-center bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Realizar Retiro Monetario</a>  
+            </div>  
+        </section>  
+        <section class="bg-white p-6 rounded-lg shadow-md w-full max-w-3xl">  
+            <h3 class="text-xl font-semibold mb-4 text-center">Características del Sistema</h3>  
+            <ul class="list-disc list-inside space-y-2">  
+                <li>Crear cuentas monetarias para gestión de fondos.</li>  
+                <li>Realizar depósitos de manera rápida y segura.</li>  
+                <li>Gestionar retiros de fondos de cuentas existentes.</li>  
+                <li>Acceso al historial de cuentas y transacciones.</li>  
+            </ul>  
+        </section>  
+    </main>  
+    <footer class="bg-blue-600 p-4 mt-8">  
+        <div class="container mx-auto text-center text-white">  
+            <p>&copy; 2024 Banco UMG. Todos los derechos reservados.</p>  
+        </div>  
+    </footer>  
+</body>  
+</html>
